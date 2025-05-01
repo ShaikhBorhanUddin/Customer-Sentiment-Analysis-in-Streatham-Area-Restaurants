@@ -7,6 +7,7 @@
   <img src="https://img.shields.io/github/issues/ShaikhBorhanUddin/Customer-Sentiment-Analysis-in-Streatham-Area-Restaurants" alt="Issues">
   <img src="https://img.shields.io/badge/Sentiment%20Analysis-NLP-blueviolet?logo=spacy" alt="Sentiment Analysis: NLP">
   <img src="https://img.shields.io/badge/Data%20Visualization-Matplotlib%20%7C%20Seaborn-yellow?logo=python" alt="Data Visualization: Python">
+  <img src="https://img.shields.io/badge/Web%20Scraping-Apify-purple?logo=apify" alt="Web Scraping: Apify">
   <img src="https://img.shields.io/badge/Version%20Control-Git-orange?logo=git" alt="Version Control: Git">
   <img src="https://img.shields.io/badge/Host-GitHub-black?logo=github" alt="Host: GitHub">
   <img src="https://img.shields.io/github/forks/ShaikhBorhanUddin/Customer-Sentiment-Analysis-in-Streatham-Area-Restaurants?style=social" alt="Forks">
