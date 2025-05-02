@@ -15,7 +15,22 @@
   <img src="https://img.shields.io/badge/Project-Completed-brightgreen" alt="Project Status">
 </p>
 
-
-
-
 ![Dashboard](https://github.com/ShaikhBorhanUddin/SW16-Sentiment-Analysis/blob/main/Images/title_mod.png?raw=true)
+
+## 📄 Licence
+
+This project is licensed under the MIT License — a permissive open-source license that allows reuse, modification, and distribution with attribution. You are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the project, provided that the original copyright and license notice are included in all copies or substantial portions of the software.
+
+For more details, refer to the LICENSE file in this repository.
+
+## 🤝 Contact
+
+If you have any questions or would like to connect, feel free to reach out!
+
+**Shaikh Borhan Uddin**  
+📧 Email: [`shaikhborhanuddin@gmail.com`](mailto:shaikhborhanuddin@gmail.com)  
+🔗 [`LinkedIn`](https://www.linkedin.com/in/shaikh-borhan-uddin-905566253/)  
+🌐 [`Portfolio`](https://github.com/ShaikhBorhanUddin)
+
+Feel free to fork the repository, experiment with new models, datasets or add visualizations!
+
