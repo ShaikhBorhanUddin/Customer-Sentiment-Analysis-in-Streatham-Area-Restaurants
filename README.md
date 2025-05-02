@@ -21,7 +21,38 @@
 
 ## Dataset
 
-The dataset contains **8,599 customer** reviews for **12 restaurants** located in the **Streatham area**. The reviews were extracted from Google Maps using the web scraping tool **Apify**. The dataset is comprehensive, featuring **93 columns** that provide a wide range of information, from metadata to sentiment-related details. Below is a breakdown of the key features and important columns:
+The dataset contains **8,599 customer** reviews for **12 restaurants** located in the **Streatham area**. The reviews were extracted from Google Maps using the web scraping tool **Apify**. The dataset is comprehensive, featuring **93 columns** that provide a wide range of information, from metadata to sentiment-related details. Below is a unified overview of the most relevant columns used in this project, categorized into restaurant tags, location/context metadata, structured review feedback, and sentiment-related fields.
+
+| Column Name                                     | Description                                                                                                                                     |
+|------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| **🍽️ Categories & Tags**                       |                                                                                                                                                 |
+| `categoryName`                                 | The main business classification of the restaurant (e.g., "Cafe", "Fine Dining"). Helps segment sentiment by business type.                    |
+| `categories/0` ~ `categories/9`                | A list of subcategories or tags describing cuisine type (e.g., "Italian", "Vegan"), dining style, ambiance, or amenities.                      |
+|                                                |                                                                                                                                                 |
+| **📍 Location & Metadata**                      |                                                                                                                                                 |
+| `title`                                        | The **name of the restaurant** being reviewed. Serves as a primary identifier when grouping or filtering reviews.                              |
+| `postalCode`                                   | Postal code of the restaurant's physical location. Useful for regional sentiment trends and geographic clustering.                             |
+| `location/lat`, `location/lng`                 | Latitude and longitude coordinates of the restaurant. Enables map-based visualizations and geospatial analysis.                                |
+| `publishAt`, `publishedAtDate`                 | Timestamps for when the review was posted. Enables time-based trend analysis (e.g., seasonal dips or spikes in sentiment).                     |
+|                                                |                                                                                                                                                 |
+| **🧾 Structured Review Feedback**               |                                                                                                                                                 |
+| `reviewContext/Meal type`                      | Indicates the meal during which the reviewer dined (e.g., "Lunch", "Dinner"). Useful for segmenting sentiment based on meal context.           |
+| `reviewContext/Noise level`                    | Describes how noisy the environment was during the visit (e.g., "Quiet", "Very Loud"). Important for assessing the comfort aspect.             |
+| `reviewContext/Parking space`                  | Indicates whether parking was available and sufficient. Reflects on convenience and accessibility.                                              |
+| `reviewContext/Price per person`               | Approximate cost per diner as reported. Can help correlate satisfaction or dissatisfaction with perceived value.                               |
+| `reviewContext/Recommendation for vegetarians` | A boolean or categorical indicator of how suitable the menu is for vegetarians. Important for dietary-specific sentiment analysis.             |
+| `reviewContext/Service`                        | Direct rating or commentary on service quality (e.g., attentiveness, speed). Helps in aspect-based analysis under "Service".                   |
+| `reviewContext/Wait time`                      | Reviewer-reported time before being served or seated. Affects sentiment regarding efficiency and service experience.                           |
+| `reviewDetailedRating/Atmosphere`              | A specific numerical rating for ambiance, décor, music, and overall vibe. Central to the "Atmosphere" aspect in sentiment modeling.            |
+| `reviewDetailedRating/Food`                    | Numeric score for food quality (e.g., taste, presentation). A direct input into aspect-level sentiment under "Food Quality".                   |
+| `reviewDetailedRating/Service`                 | Numeric score for service experience (e.g., staff friendliness, professionalism). Complements `reviewContext/Service` for stronger analysis.   |
+|                                                |                                                                                                                                                 |
+| **💬 Sentiment Input Fields**                   |                                                                                                                                                 |
+| `text`                                         | The full body of the written review. Main source for sentiment classification and aspect-based opinion mining.                                 |
+| `name`                                         | The **reviewer's name** or username. Useful for tracking repeat reviewers or studying reviewer credibility and bias patterns.                  |
+| `stars`                                        | Star rating given by the reviewer (usually 1 to 5). Often used as a weak label for supervised sentiment model training.                        |
+| `totalScore`                                   | The overall average Google rating for the restaurant. Useful as a benchmark to compare individual review sentiment with business reputation.    |
+
 
 ## Folder Structure
 
