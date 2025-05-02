@@ -21,7 +21,7 @@
 
 ## Dataset
 
-The dataset contains **8,599 customer** reviews for **12 restaurants** located in the **Streatham area**. The individual reviews for every restaurants were extracted from Google Maps and merged using web scraping tool **Apify**. The dataset is comprehensive, featuring **93 columns** that provide a wide range of information, from metadata to sentiment-related details. Below is a unified overview of the most relevant columns used in this project, categorized into restaurant tags, location/context metadata, structured review feedback, and sentiment-related fields.
+The [dataset](https://github.com/ShaikhBorhanUddin/Customer-Sentiment-Analysis-in-Streatham-Area-Restaurants/blob/main/Dataset/combined_df.csv) contains **8,599 customer** reviews for **12 restaurants** located in the **Streatham area**. The individual reviews for every restaurants were extracted from Google Maps and merged using web scraping tool **Apify**. The dataset is comprehensive, featuring **93 columns** that provide a wide range of information, from metadata to sentiment-related details. Below is a unified overview of the most relevant columns used in this project, categorized into restaurant tags, location/context metadata, structured review feedback, and sentiment-related fields.
 
 | Column Name                                     | Description                                                                                                                                     |
 |------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
