@@ -63,6 +63,8 @@ There are **3,010** null values in the `text` column out of a total of **8,599**
 
 ## Result Analysis & Visualization
 
+In this section, the results for both models will be analyzed. The table below presents the sentiment analysis outcomes from the VADER model, which offers a lexicon-based perspective on how each restaurant is perceived by customers based on the content of the reviews.
+
 | Restaurant Title                      | Negative | Neutral | Positive | Total | Positive Ratio |
 |--------------------------------------|----------|---------|----------|-------|----------------|
 | Roots Restaurant                     | 19       | 24      | 693      | 736   | 0.941576       |
@@ -77,6 +79,10 @@ There are **3,010** null values in the `text` column out of a total of **8,599**
 | Starbucks Coffee                     | 60       | 43      | 302      | 405   | 0.745679       |
 | Marinatto                            | 31       | 94      | 309      | 434   | 0.711982       |
 | KFC London                           | 216      | 161     | 382      | 759   | 0.503294       |
+
+The VADER sentiment analysis (above table) shows that Roots Restaurant and Paratha Inn (Streatham) are the top performers, with over 93% of reviews being positive. These restaurants consistently deliver satisfying experiences with minimal negative feedback. SW16 Bar & Kitchen and Italian Bistro also perform strongly, though with slightly more mixed opinions. Mid-range performers like Putt Putt & Karaoke Bar, La Casita, and Slurp still receive mostly positive feedback but show more variability. These restaurants may offer good experiences overall but likely struggle with consistency in service or food quality. On the lower end, Nando’s Streatham, Starbucks Coffee, and Marinatto show increasing levels of neutral and negative sentiment. The most concerning is KFC London, where positive sentiment barely exceeds 50%, pointing to significant customer dissatisfaction that likely stems from poor service, food quality, or both. In summary, while several restaurants excel in customer sentiment, a few face challenges that should be addressed to improve their overall reputation.
+
+To provide a deeper, context-aware interpretation of customer sentiment, the same dataset was analyzed using the DistilBERT model—a transformer-based approach that captures nuanced expressions in reviews.
 
 | Restaurant Title                      | Negative | Neutral | Positive | Total | Positive Ratio |
 |--------------------------------------|----------|---------|----------|-------|----------------|
@@ -93,11 +99,19 @@ There are **3,010** null values in the `text` column out of a total of **8,599**
 | Marinatto                            | 128      | 4       | 302      | 434   | 0.695853       |
 | KFC London                           | 314      | 70      | 375      | 759   | 0.494071       |
 
+The DistilBERT sentiment analysis (above table) presents a refined but slightly stricter view compared to VADER, highlighting more critical customer perceptions. Paratha Inn (Streatham) and Roots Restaurant remain the top performers, each with over 94% positive sentiment. These restaurants continue to demonstrate consistent quality and strong customer satisfaction, even under the more nuanced scrutiny of a transformer-based model. SW16 Bar & Kitchen and Italian Bistro follow closely, maintaining high positive ratios around 90%. This indicates that despite the stricter classification, their customer experiences are still largely favorable. These venues likely benefit from strong service and food quality that stand up well to detailed textual analysis. In the mid-range, Putt Putt & Karaoke Bar, La Casita, and Slurp show slightly reduced positive ratios compared to VADER, with more critical sentiment identified by DistilBERT. While still mostly positive, the model picks up on more nuanced dissatisfaction, likely tied to inconsistent service or environment. Toward the bottom, Nando’s Streatham, Starbucks Coffee, and Marinatto reveal further dips in sentiment. These establishments have significant portions of negative or neutral reviews, suggesting recurring issues or underwhelming experiences. KFC London stands out again as the poorest performer, with less than half of the reviews rated as positive. This confirms serious shortcomings in customer satisfaction, especially under the deeper linguistic interpretation of a transformer model. Overall, DistilBERT amplifies sentiment polarity, providing sharper insight into where customer experience truly excels and where it falls short. The top restaurants remain strong, while those in the lower tier appear even more in need of attention.
+
 ## Decision Visualization
+
+In the Visualization section, the three VADER and distilBERT sentiment breakdown plots provide insight into how these models interprets individual reviews.
 
 ![Dashboard](https://github.com/ShaikhBorhanUddin/Customer-Sentiment-Analysis-in-Streatham-Area-Restaurants/blob/main/Images/vader_viz.png?raw=true)
 
+The first and third reviews (Entry Rows: 0 and 4612) have compound scores of 0.95, indicating highly positive sentiment overall. However, both display a greater neutral score (0.55 and 0.54 respectively) than positive (0.45 and 0.46), showing that VADER sometimes classifies parts of strongly positive text as neutral due to its rule-based approach. The second review (Entry Row: 3022) has a compound score of 0.60, which is still positive, but lower in intensity. Here, the model assigns 80% to positive sentiment, reflecting a clearer alignment between the compound score and the label distribution. These visualizations suggest that while VADER effectively identifies positive sentiment overall, it may underrepresent positivity when neutral language is present, highlighting its limitations in capturing nuance compared to transformer models like DistilBERT.
+
 ![Dashboard](https://github.com/ShaikhBorhanUddin/Customer-Sentiment-Analysis-in-Streatham-Area-Restaurants/blob/main/Images/distilbert_viz.png?raw=true)
+
+The three DistilBERT sentiment visualizations (above 3 images) show consistent and decisive classifications across all selected reviews (Entry Rows: 2301, 4022, and 999). Each review is labeled as POSITIVE with a confidence score of 1.00, and all sentiment probability is assigned entirely to the positive class, with 0.00 for both negative and neutral. This reflects DistilBERT’s ability to interpret contextual cues and nuanced expressions more confidently than VADER. Unlike VADER, which may split scores between neutral and positive even in clearly favorable reviews, DistilBERT shows no ambiguity. It identifies strong positive sentiment with full certainty, which indicates a more assertive and context-aware classification style, especially useful for business insights drawn from natural customer language.
 
 ## Technology Used
 
