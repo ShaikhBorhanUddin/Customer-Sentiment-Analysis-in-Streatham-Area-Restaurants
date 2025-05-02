@@ -21,6 +21,8 @@
 
 ## Dataset
 
+The dataset contains **8,599 customer** reviews for **12 restaurants** located in the **Streatham area**. The reviews were extracted from Google Maps using the web scraping tool **Apify**. The dataset is comprehensive, featuring **93 columns** that provide a wide range of information, from metadata to sentiment-related details. Below is a breakdown of the key features and important columns:
+
 ## Folder Structure
 
 ## Project Workflow
