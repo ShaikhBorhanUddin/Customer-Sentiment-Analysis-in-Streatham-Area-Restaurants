@@ -117,13 +117,13 @@ The three DistilBERT sentiment visualizations (above 3 images) show consistent a
 
 This project leverages several NLP frameworks, along with essential web scrapping, data processing and visualization libraries, which are listed here.
 - Programming Language: `Python 3.10+`
+- Web Scrapping: `Apify`
 - NLP Frameworks: `VADER` `DistilBERT`
 - Deep Learning Frameworks: `TensorFlow` `Keras` `NumPy` `Pandas`
-- NLTK: `tokenization` `stopword removal` `stemming`
-- Feature Extraction: `TF-IDF Vectorizer` `CountVectorizer`
-- Model Evaluation: `Accuracy` `Precision` `Recall` `F1-score` `Confusion Matrix`
-- Visualization: `Matplotlib` `Seaborn` `Lime`
-- Development Environment: `Jupyter Notebook` `Google Colab`
+- NLTK: `sentimentIntensityAnalyzer`
+- Visualization: `Matplotlib` `Seaborn`
+- Development Environment: `Google Colab`
+
 ## Practical Application
 
 ## Licence
