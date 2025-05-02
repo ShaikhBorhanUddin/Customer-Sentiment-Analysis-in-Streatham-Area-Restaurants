@@ -63,6 +63,36 @@ There are **3,010** null values in the `text` column out of a total of **8,599**
 
 ## Result Analysis & Visualization
 
+| Restaurant Title                      | Negative | Neutral | Positive | Total | Positive Ratio |
+|--------------------------------------|----------|---------|----------|-------|----------------|
+| Roots Restaurant                     | 19       | 24      | 693      | 736   | 0.941576       |
+| Paratha Inn (Streatham)              | 7        | 13      | 291      | 311   | 0.935691       |
+| SW16 Bar & Kitchen                   | 27       | 25      | 677      | 729   | 0.928669       |
+| Italian Bistro (Italian Restaurant)  | 32       | 41      | 772      | 845   | 0.913609       |
+| Putt Putt & Karaoke Bar              | 58       | 40      | 693      | 791   | 0.876106       |
+| La Casita                            | 45       | 106     | 785      | 936   | 0.838675       |
+| Slurp                                | 67       | 73      | 649      | 789   | 0.822560       |
+| Porky's Wine Bar                     | 33       | 57      | 341      | 431   | 0.791183       |
+| Nando's Streatham                    | 144      | 192     | 1097     | 1433  | 0.765527       |
+| Starbucks Coffee                     | 60       | 43      | 302      | 405   | 0.745679       |
+| Marinatto                            | 31       | 94      | 309      | 434   | 0.711982       |
+| KFC London                           | 216      | 161     | 382      | 759   | 0.503294       |
+
+| Restaurant Title                      | Negative | Neutral | Positive | Total | Positive Ratio |
+|--------------------------------------|----------|---------|----------|-------|----------------|
+| Paratha Inn (Streatham)              | 14       | 0       | 297      | 311   | 0.954984       |
+| Roots Restaurant                     | 34       | 7       | 695      | 736   | 0.944293       |
+| SW16 Bar & Kitchen                   | 62       | 9       | 658      | 729   | 0.902606       |
+| Italian Bistro (Italian Restaurant)  | 79       | 5       | 761      | 845   | 0.900592       |
+| Putt Putt & Karaoke Bar              | 98       | 8       | 685      | 791   | 0.865992       |
+| La Casita                            | 122      | 26      | 788      | 936   | 0.841880       |
+| Slurp                                | 113      | 35      | 641      | 789   | 0.812421       |
+| Porky's Wine Bar                     | 53       | 36      | 342      | 431   | 0.793503       |
+| Nando's Streatham                    | 256      | 86      | 1091     | 1433  | 0.761340       |
+| Starbucks Coffee                     | 102      | 21      | 282      | 405   | 0.696296       |
+| Marinatto                            | 128      | 4       | 302      | 434   | 0.695853       |
+| KFC London                           | 314      | 70      | 375      | 759   | 0.494071       |
+
 ## Decision Visualization
 
 ![Dashboard](https://github.com/ShaikhBorhanUddin/Customer-Sentiment-Analysis-in-Streatham-Area-Restaurants/blob/main/Images/vader_viz.png?raw=true)
