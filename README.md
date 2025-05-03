@@ -80,7 +80,7 @@ Customer-Sentiment-Analysis-in-Streatham-Area-Restaurants/
 |
 ├── requirements.txt               # Python dependencies
 |
-└── LICENSE                        # License file (MIT recommended)
+└── Licence                        # License file (MIT recommended)
 ```
 
 ## Experiments
