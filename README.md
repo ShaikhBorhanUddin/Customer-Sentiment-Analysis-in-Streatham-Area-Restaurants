@@ -64,7 +64,7 @@ The [dataset](https://github.com/ShaikhBorhanUddin/Customer-Sentiment-Analysis-i
 | `stars`                                        | Star rating given by the reviewer (usually 1 to 5). Often used as a weak label for supervised sentiment model training.                        |
 | `totalScore`                                   | The overall average Google rating for the restaurant. Useful as a benchmark to compare individual review sentiment with business reputation.    |
 
-There are **3,010** null values in the `text` column out of a total of **8,599** reviews, meaning that approximately **35%** of the reviews lack textual content. However, all 3,010 entries with a null text column do have a star rating. Including a sentiment proxy mapping for the reviews with null text entries (based on their star ratings) will provide a complete sentiment analysis across all 8,599 reviews. The process of sentiment proxy mapping will be discussed in the Experiments section.
+There are **3,010** null values in the `text` column out of a total of **8,599** reviews, meaning that approximately **35%** of the reviews lack textual content. However, all 3,010 entries with a null text column do have a star rating. Including a **sentiment proxy mapping** for the reviews with null text entries (based on their star ratings) will provide a complete sentiment analysis across all 8,599 reviews. The process of sentiment proxy mapping will be discussed in the Experiments section.
 
 ## Folder Structure
 ```bash
