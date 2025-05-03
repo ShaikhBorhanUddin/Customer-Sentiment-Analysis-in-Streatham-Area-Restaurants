@@ -122,16 +122,47 @@ The first and third reviews (Entry Rows: 0 and 4612) have compound scores of 0.9
 
 The three DistilBERT sentiment visualizations (above 3 images) show consistent and decisive classifications across all selected reviews (Entry Rows: 2301, 4022, and 999). Each review is labeled as POSITIVE with a confidence score of 1.00, and all sentiment probability is assigned entirely to the positive class, with 0.00 for both negative and neutral. This reflects DistilBERT’s ability to interpret contextual cues and nuanced expressions more confidently than VADER. Unlike VADER, which may split scores between neutral and positive even in clearly favorable reviews, DistilBERT shows no ambiguity. It identifies strong positive sentiment with full certainty, which indicates a more assertive and context-aware classification style, especially useful for business insights drawn from natural customer language.
 
+## Key Takeaways
+
+- Roots Restaurant and Paratha Inn are standout performers — their sentiment ratios show strong and consistent customer satisfaction.
+
+- KFC London and Marinatto need urgent attention in service quality or experience optimization.
+
+- Mid-range performers like Slurp and La Casita may benefit from focusing on specific aspects (e.g., wait times, food consistency) revealed in detailed reviews.
+
 ## Technology Used
 
-This project leverages several NLP frameworks, along with essential web scrapping, data processing and visualization libraries, which are listed here.
-- Programming Language: `Python 3.10+`
-- Web Scrapping: `Apify`
-- NLP Frameworks: `VADER` `DistilBERT`
-- Deep Learning Frameworks: `TensorFlow` `Keras` `NumPy` `Pandas`
-- NLTK: `sentimentIntensityAnalyzer`
-- Visualization: `Matplotlib` `Seaborn`
-- Development Environment: `Google Colab`
+This project integrates a range of modern tools and frameworks to perform comprehensive sentiment analysis on restaurant reviews, from data acquisition to deep learning-based interpretation and visualization.
+
+- **👨‍💻 Programming Language:**
+The entire workflow is developed using Python 3.10+, due to its rich ecosystem of libraries for natural language processing, machine learning, and data visualization.
+
+- **🌐 Web Scraping:**
+Apify was employed to scrape restaurant reviews and metadata efficiently. Its automation capabilities enabled large-scale, structured data collection from online platforms.
+
+- **🧠 NLP Frameworks:**
+Two different natural language processing techniques were used to assess sentiment:
+
+   - VADER (Valence Aware Dictionary and sEntiment Reasoner), a lexicon and rule-based sentiment analysis tool optimized for social text.
+
+   - DistilBERT, a transformer-based, context-aware sentiment classifier fine-tuned on large datasets to interpret nuanced expressions.
+
+- **📚 Deep Learning & Data Handling:**
+The backend sentiment classification, especially with DistilBERT, utilized:
+
+   - TensorFlow and Keras for loading and applying pre-trained transformer models.
+
+   - NumPy and Pandas for efficient numerical operations and structured data manipulation.
+
+- **🗣️ NLTK Toolkit:**
+Specifically, SentimentIntensityAnalyzer from NLTK was used for implementing VADER sentiment scoring, enabling quick polarity detection of review texts.
+
+- **📊 Data Visualization:**
+
+Matplotlib and Seaborn were used to create sentiment distribution plots, model breakdown visualizations, and other interpretive graphics to support the analysis.
+
+- **💻 Development Environment:**
+All development and experimentation were carried out on Google Colab Pro, providing access to high speed GPUs and a collaborative environment for executing and documenting experiments.
 
 ## Practical Application
 
