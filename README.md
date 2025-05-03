@@ -67,6 +67,30 @@ The [dataset](https://github.com/ShaikhBorhanUddin/Customer-Sentiment-Analysis-i
 There are **3,010** null values in the `text` column out of a total of **8,599** reviews, meaning that approximately **35%** of the reviews lack textual content. However, all 3,010 entries with a null text column do have a star rating. Including a sentiment proxy mapping for the reviews with null text entries (based on their star ratings) will provide a complete sentiment analysis across all 8,599 reviews. The process of sentiment proxy mapping will be discussed in the Experiments section.
 
 ## Folder Structure
+```bash
+Customer-Sentiment-Analysis-in-Streatham-Area-Restaurants/
+├── 📁 dataset/                        # Raw or processed datasets (CSV, JSON, etc.)
+│   └── combined_df.csv
+│
+├── 📁 notebooks/                  # Jupyter Notebooks for exploration and visualization
+│   ├── sentiment_analysis.ipynb
+│   ├── data_cleaning.ipynb
+│   └── exploratory_analysis.ipynb
+│
+├── 📁 Src/                        # Source Python code for core logic
+│   ├── sentiment_vader.py
+│   ├── sentiment_distillbert.py
+│   ├── sentiment_proxy.py
+│   └── utils.py
+│
+├── 📁 Images/             # Output plots and charts
+│   ├── sentiment_distribution.png
+│   └── comparison_heatmap.png
+│
+├── README.md                      # Project overview and documentation
+├── requirements.txt               # Python dependencies
+└── LICENSE                        # License file (MIT recommended)
+```
 
 ## Experiments
 
