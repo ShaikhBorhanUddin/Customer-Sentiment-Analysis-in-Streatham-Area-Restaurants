@@ -19,6 +19,17 @@
 
 ## Project Overview
 
+In the age of online reviews, star ratings are often treated as the definitive metric of customer satisfaction. But the reality is far more nuanced—what a customer *writes* often tells a richer, more emotional, and more actionable story than what they *click*. A 5-star rating might hide subtle complaints, while a 3-star review could still express strong loyalty and praise.
+
+This project, **Customer Sentiment Analysis in Streatham Area Restaurants**, aims to go beyond surface-level metrics by applying Natural Language Processing (NLP) techniques to real Google Map reviews of 12 restaurants in the Streatham area. By combining structured data (like star ratings, review context, and categories) with unstructured review text, the project reveals:
+
+- What customers *really* feel, not just what they rate.
+- Which aspects of dining (e.g., service, noise, wait time) matter most to sentiment.
+- How sentiment varies across restaurant types, time, and geography.
+- The value of sentiment proxies where text is missing, using models like VADER and DistilBERT.
+
+This deep dive into public opinion transforms scattered reviews into powerful insights for business owners, local analysts, and NLP researchers alike. It illustrates that text isn't just an accessory to a star—it’s often the main dish.
+
 ## Dataset
 
 The [dataset](https://github.com/ShaikhBorhanUddin/Customer-Sentiment-Analysis-in-Streatham-Area-Restaurants/blob/main/Dataset/combined_df.csv) contains **8,599 customer** reviews for **12 restaurants** located in the **Streatham area**. The individual reviews for every restaurants were extracted from Google Maps and merged using web scraping tool **Apify**. The dataset is comprehensive, featuring **93 columns** that provide a wide range of information, from metadata to sentiment-related details. Below is a unified overview of the most relevant columns used in this project, categorized into restaurant tags, location/context metadata, structured review feedback, and sentiment-related fields.
