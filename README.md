@@ -69,26 +69,17 @@ There are **3,010** null values in the `text` column out of a total of **8,599**
 ## Folder Structure
 ```bash
 Customer-Sentiment-Analysis-in-Streatham-Area-Restaurants/
-├── 📁 dataset/                        # Raw or processed datasets (CSV, JSON, etc.)
-│   └── combined_df.csv
+|
+├── 📁 Dataset/                    # Raw and processed datasets (cav format)
 │
-├── 📁 notebooks/                  # Jupyter Notebooks for exploration and visualization
-│   ├── sentiment_analysis.ipynb
-│   ├── data_cleaning.ipynb
-│   └── exploratory_analysis.ipynb
+├── 📁 Src/                        # Dataset formation and model deployment
 │
-├── 📁 Src/                        # Source Python code for core logic
-│   ├── sentiment_vader.py
-│   ├── sentiment_distillbert.py
-│   ├── sentiment_proxy.py
-│   └── utils.py
-│
-├── 📁 Images/             # Output plots and charts
-│   ├── sentiment_distribution.png
-│   └── comparison_heatmap.png
+├── 📁 Images/                     # Output plots and charts
 │
 ├── README.md                      # Project overview and documentation
+|
 ├── requirements.txt               # Python dependencies
+|
 └── LICENSE                        # License file (MIT recommended)
 ```
 
