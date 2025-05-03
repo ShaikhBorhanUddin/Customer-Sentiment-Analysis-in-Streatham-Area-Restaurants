@@ -57,9 +57,21 @@ There are **3,010** null values in the `text` column out of a total of **8,599**
 
 ## Folder Structure
 
-## Project Workflow
-
 ## Experiments
+
+The sentiment analysis experiment followed a clear and systematic approach to processing and interpreting restaurant reviews. First, sentiment models were loaded: **VADER** from the NLTK library for lexicon-based scoring, and **DistilBERT** from the Hugging Face Transformers library for deep learning-based classification. These models were applied to all reviews containing non-null text entries, with each review classified into positive, neutral, or negative sentiment categories based on model predictions.
+
+For reviews that lacked textual content, a proxy sentiment mapping strategy was employed using the star rating field as a surrogate for sentiment. Specifically:
+
+- Reviews with 1–2 stars were treated as `negative`
+
+- 3-star reviews were labeled `neutral`
+
+- 4–5 star reviews were marked `positive`
+
+Once both model-generated and proxy-derived sentiments were obtained, they were merged into a single sentiment label for each review to ensure full coverage. Sentiments were then aggregated by restaurant using the title column, which identified the venue each review was associated with. Finally, a sentiment summary was produced, showing sentiment distribution and positive sentiment ratio per restaurant, which served as a measure of customer satisfaction.
+
+The models were fine-tuned and executed using an NVIDIA A100 GPU in Google Colab. However, given the relatively small size of the dataset (approximately 8,600 entries), this was ultimately excessive—CPU execution would have been sufficient for this task.
 
 ## Result Analysis & Visualization
 
