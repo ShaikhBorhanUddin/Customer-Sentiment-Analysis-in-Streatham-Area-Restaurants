@@ -176,7 +176,20 @@ Matplotlib and Seaborn were used to create sentiment distribution plots, model b
 - **💻 Development Environment:**
 All development and experimentation were carried out on Google Colab Pro, providing access to high speed GPUs and a collaborative environment for executing and documenting experiments.
 
-## Practical Application
+## Practical Applications
+
+This project isn't just about modeling sentiment—it brings real-world insights into customer satisfaction and business profiling within the Streatham restaurant scene. Below are key ways the results can be applied in the real world:
+
+| **Use Case**                                |**Description**                                                                                                                                                  |
+|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 📊 **Business Intelligence for Owners** | Restaurant managers can identify what customers praise (e.g., service, ambiance) or complain about (e.g., noise, price) and make data-driven improvements.   |
+| 🌍 **Local Dining Trend Analysis**      | Urban planners, bloggers, or local foodies can discover how sentiment varies by restaurant type, area, or over time—fueling guides, reports, or investments. |
+| 🔍 **Customer Feedback Clustering**    | Reviews are automatically grouped by recurring themes like "slow service", "delicious vegan options", or "long wait time" for faster interpretation.         |
+| ⭐ **Rating-Sentiment Discrepancy**     | By comparing star ratings with textual sentiment, the system can flag cases where customers left 4+ stars but expressed dissatisfaction—or vice versa.       |
+| 🧠 **NLP Model Training Dataset**       | The labeled reviews (via VADER/DistilBERT) serve as valuable training or evaluation data for sentiment models in other domains or future fine-tuning tasks.  |
+| 📍 **Geo-Sentiment Heatmapping**       | Using geolocation data (`lat`, `lng`), one can build maps that show which parts of Streatham are perceived most positively or negatively by diners.          |
+| 📆 **Temporal Sentiment Insights**     | Tracking sentiment over months/years helps restaurants evaluate changes like renovations, new menus, or staffing decisions in context.                       |
+| 🏷️ **Category-Based Sentiment Insights** | Tags like "Takeaway", "Casual Dining", or "Romantic" help compare sentiment across different restaurant types, enhancing local competitive analysis.         |
 
 ## Licence
 
