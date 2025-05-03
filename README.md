@@ -82,6 +82,10 @@ Customer-Sentiment-Analysis-in-Streatham-Area-Restaurants/
 |
 └── Licence                        # License file (MIT recommended)
 ```
+Some .ipynb files may run pproperly or output truncated in github environmet. So, original source code files from google drive are linked here:
+- Dataset formation and visualization : [Link](https://colab.research.google.com/drive/1yUttPCkKmx5YWfSr_RveHCZP1sJaQcs3?usp=sharing)
+- VADER Model : [Link](https://colab.research.google.com/drive/1byniC8gn1-SPfsdMAXmdpCEHlDQnilLp?usp=sharing)
+- DistilBERT Model : [Link](https://colab.research.google.com/drive/10GSSzT5HxyQ3IyKSWDgKHR9Ybi3H2sw2?usp=sharing)
 
 ## Experiments
 
