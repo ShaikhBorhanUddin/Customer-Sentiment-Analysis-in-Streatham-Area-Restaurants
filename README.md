@@ -72,7 +72,7 @@ There are **3,010** null values in the `text` column out of a total of **8,599**
 ```bash
 Customer-Sentiment-Analysis-in-Streatham-Area-Restaurants/
 |
-├── 📁 Dataset/                    # Raw and processed datasets (cav format)
+├── 📁 Dataset/                    # Raw and processed datasets (csv format)
 │
 ├── 📁 Src/                        # Dataset formation and model deployment
 │
