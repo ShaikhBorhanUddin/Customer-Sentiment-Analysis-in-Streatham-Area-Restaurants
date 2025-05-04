@@ -101,7 +101,7 @@ For reviews that lacked textual content, a proxy sentiment mapping strategy was 
 
 Once both model-generated and proxy-derived sentiments were obtained, they were merged into a single sentiment label for each review to ensure full coverage. Sentiments were then aggregated by restaurant using the title column, which identified the venue each review was associated with. Finally, a sentiment summary was produced, showing sentiment distribution and positive sentiment ratio per restaurant, which served as a measure of customer satisfaction.
 
-The models were fine-tuned and executed using an NVIDIA A100 GPU in Google Colab. However, given the relatively small size of the dataset (approximately 8,600 entries), this was ultimately excessive—CPU execution would have been sufficient for this task.
+The models were fine-tuned and trained on NVIDIA A100 GPU in Google Colab. However, given the relatively small size of the dataset (approximately 8,600 entries), this was ultimately excessive—CPU execution would have been sufficient for this task.
 
 ## Result Analysis & Visualization
 
