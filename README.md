@@ -200,7 +200,6 @@ The backend sentiment classification, especially with DistilBERT, utilized:
 Specifically, SentimentIntensityAnalyzer from NLTK was used for implementing VADER sentiment scoring, enabling quick polarity detection of review texts.
 
 - **📊 Data Visualization:**
-
 Matplotlib and Seaborn were used to create sentiment distribution plots, model breakdown visualizations, and other interpretive graphics to support the analysis.
 
 - **💻 Development Environment:**
