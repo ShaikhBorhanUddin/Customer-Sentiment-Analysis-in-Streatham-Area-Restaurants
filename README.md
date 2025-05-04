@@ -28,6 +28,8 @@ This project, **Customer Sentiment Analysis in Streatham Area Restaurants**, aim
 - How sentiment varies across restaurant types, time, and geography.
 - The value of sentiment proxies where text is missing, using models like VADER and DistilBERT.
 
+![Dashboard](https://github.com/ShaikhBorhanUddin/Customer-Sentiment-Analysis-in-Streatham-Area-Restaurants/blob/main/Images/restaurants_loc.png?raw=true)
+
 This deep dive into public opinion transforms scattered reviews into powerful insights for business owners, local analysts, and NLP researchers alike. It illustrates that text isn't just an accessory to a star—it’s often the main dish.
 
 ## Dataset
