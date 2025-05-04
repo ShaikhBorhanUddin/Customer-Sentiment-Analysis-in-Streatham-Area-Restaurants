@@ -74,7 +74,7 @@ Customer-Sentiment-Analysis-in-Streatham-Area-Restaurants/
 |
 ├── 📁 Dataset/                    # Raw and processed datasets (csv format)
 │
-├── 📁 Src/                        # Dataset formation and model deployment
+├── 📁 Src/                        # Dataset formation and model deployment (.ipynb files)
 │
 ├── 📁 Images/                     # Output plots and charts
 │
