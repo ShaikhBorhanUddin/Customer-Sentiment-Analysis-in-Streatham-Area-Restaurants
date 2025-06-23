@@ -91,7 +91,7 @@ Some .ipynb files may not run properly or output truncated in github environmet.
 
 ## Experiments
 
-The sentiment analysis experiment followed a clear and systematic approach to processing and interpreting restaurant reviews. First, sentiment models were loaded: **VADER** from the NLTK library for lexicon-based scoring, and **DistilBERT** from the Hugging Face Transformers library for deep learning-based classification. These models were applied to all reviews containing non-null text entries, with each review classified into positive, neutral, or negative sentiment categories based on model predictions.
+The sentiment analysis experiment followed a clear and systematic approach to processing and interpreting restaurant reviews. First, sentiment models were loaded: **VADER** (Valence Aware Dictionary and sEntiment Reasoner) from the NLTK library for lexicon-based scoring, and **DistilBERT** from the Hugging Face Transformers library for deep learning-based classification. These models were applied to all reviews containing non-null text entries, with each review classified into positive, neutral, or negative sentiment categories based on model predictions.
 
 For reviews that lacked textual content, a proxy sentiment mapping strategy was employed using the star rating field as a surrogate for sentiment. Specifically:
 
